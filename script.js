@@ -41,6 +41,7 @@ function Timer30s() {
             alert("questo numero hai memorizzato correttamente: " + numeriUtente);
             arrNumeriUtente.push(numeriUtente);
             document.getElementById("numeri").innerHTML += arrNumeriUtente[i] + " ";
+            document.getElementById("numero-totale").innerHTML = arrNumeriUtente.length
         }
     }
 }
