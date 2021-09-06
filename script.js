@@ -28,7 +28,7 @@ console.log(numeriCpuCasuali);
 
 // 2. Faccio vedere  Un alert() che espone 5 numeri generati casualmente.
 
-alert(numeriCpuCasuali);
+alert("Guarda questi numeri e memorizza, dopo una pausa di 30 secondi devi inserire i numeri che hai memorizzato " + numeriCpuCasuali);
 
 //3.  Da li parte un timer di 30 secondi.
 //3a. chido all'utente per 5 volte inserire il numero
