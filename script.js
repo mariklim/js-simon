@@ -33,7 +33,7 @@ alert(numeriCpuCasuali);
 //3.  Da li parte un timer di 30 secondi.
 //3a. chido all'utente per 5 volte inserire il numero
 var arrNumeriUtente = [];
-setTimeout(Timer30s, 3000);
+setTimeout(Timer30s, 30000);
 function Timer30s() {
     for( var i = 0; i < 5; i++){
         var numeriUtente = parseInt(prompt("Inserisci i numeri che hai memorizzato"));
