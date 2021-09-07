@@ -18,10 +18,24 @@ function getRndInteger(min, max) {
 
 
 var numeriCpuCasuali = [];
-for(var i = 0; i < 5; i++){
-    var numeriRandom = getRndInteger(1, 50);
-    console.log(numeriRandom);
-    numeriCpuCasuali.push(numeriRandom);
+
+// per la versione con numeri duplicati si usa ciclo FOR:
+
+// for(var i = 0; i < 5; i++){
+//     var numeriRandom = getRndInteger(1, 50);
+//     console.log(numeriRandom);
+//     numeriCpuCasuali.push(numeriRandom);
+// }
+
+
+// per la versione senza numeri duplicati si usa ciclo WHILE:
+
+while(numeriCpuCasuali.length < 5) {
+	var numeriRandom = getRndInteger(1, 50);
+
+	if (numeriCpuCasuali.includes(numeriRandom) == false ) {
+		numeriCpuCasuali.push(numeriRandom);
+	}	
 }
 
 console.log(numeriCpuCasuali);
